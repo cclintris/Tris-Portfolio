@@ -1,5 +1,11 @@
+import Sidebar from './components/Sidebar'
+
 function App() {
-  return <div className="App">Tris Portfolio</div>;
+  return (
+    <>
+      <Sidebar />
+    </>
+  )
 }
 
-export default App;
+export default App
