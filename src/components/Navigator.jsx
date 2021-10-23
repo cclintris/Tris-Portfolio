@@ -11,8 +11,8 @@ const Navigator = () => {
         <img src={avatar} alt="" />
       </div>
       <ul className="nav-items">
-        {routes.map(({ name, route }) => (
-          <li className="nav-item">
+        {routes.map(({ name, route }, key) => (
+          <li className="nav-item" key={key}>
             <NavLink to={route} activeClassName="active-class">
               {name}
             </NavLink>
