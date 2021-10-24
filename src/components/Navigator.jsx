@@ -1,6 +1,6 @@
 import React from 'react'
 import avatar from '../assets/img/avatar.jpg'
-import { StyledNavigator } from './styled-components'
+import { StyledNavigator } from './styles'
 import { NavLink } from 'react-router-dom'
 import { routes } from '../routes'
 
@@ -20,7 +20,7 @@ const Navigator = () => {
         ))}
       </ul>
       <footer className="footer">
-        <p>@2021 Tris personal website</p>
+        <p>@2021 Tristan's personal website</p>
       </footer>
     </StyledNavigator>
   )

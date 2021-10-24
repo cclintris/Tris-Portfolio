@@ -33,6 +33,7 @@ export const StyledNavigator = styled.nav`
         display: block;
         padding: 0.2rem 0;
         position: relative;
+        z-index: 2;
         &:hover {
           cursor: pointer;
         }
@@ -42,8 +43,11 @@ export const StyledNavigator = styled.nav`
           bottom: 0;
           left: 0;
           width: 0;
-          height: 50%;
-          background-color: red;
+          /* height: 50%; */
+          background-color: var(--primary-color);
+          transition: all 0.4s cubic-bezier(1, -0.2, 0.25, 0.95);
+          z-index: 1;
+          opacity: 0.2;
         }
       }
 
@@ -51,6 +55,11 @@ export const StyledNavigator = styled.nav`
         width: 100%;
         height: 100%;
       }
+    }
+
+    .active-class {
+      background-color: var(--primary-color);
+      opacity: 0.8;
     }
   }
 

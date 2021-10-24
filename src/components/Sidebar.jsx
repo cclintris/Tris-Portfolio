@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyledSidebar } from './styled-components'
+import { StyledSidebar } from './styles'
 import Navigator from './Navigator'
 
 const Sidebar = () => {
