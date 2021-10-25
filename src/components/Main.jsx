@@ -1,5 +1,6 @@
 import React from 'react'
 import { StyledMainContent } from './styles'
+import Home from '../pages/Home'
 
 const Main = () => {
   return (
@@ -10,6 +11,7 @@ const Main = () => {
         <div className="line-3"></div>
         <div className="line-4"></div>
       </div>
+      <Home />
     </StyledMainContent>
   )
 }
