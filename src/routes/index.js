@@ -6,27 +6,27 @@
 
 export const routes = [
   {
-    name: 'Home',
+    name: 'HOME',
     route: '/home',
   },
   {
-    name: 'About',
+    name: 'ABOUT',
     route: '/about',
   },
   {
-    name: 'Resume',
+    name: 'RESUME',
     route: '/resume',
   },
   {
-    name: 'Portfolios',
+    name: 'PORTFOLIOS',
     route: '/portfolios',
   },
   {
-    name: 'Blogs',
+    name: 'BLOGS',
     route: '/blogs',
   },
   {
-    name: 'Contact',
+    name: 'CONTACT',
     route: '/contact',
   },
 ]

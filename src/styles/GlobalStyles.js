@@ -34,6 +34,20 @@ const GlobalStyles = createGlobalStyle`
     color: inherit;
     font-size: inherit;
   }
+
+  h1 {
+    font-size: 2.5rem;
+    color: var(--white-color);
+    
+    span {
+      font-size: inherit;
+      color: var(--primary-color);
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
 `
 
 export default GlobalStyles
