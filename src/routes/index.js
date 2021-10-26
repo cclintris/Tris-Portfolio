@@ -7,26 +7,26 @@
 export const routes = [
   {
     name: 'HOME',
-    route: '/home',
+    path: '/',
   },
   {
     name: 'ABOUT',
-    route: '/about',
-  },
-  {
-    name: 'RESUME',
-    route: '/resume',
-  },
-  {
-    name: 'PORTFOLIOS',
-    route: '/portfolios',
+    path: '/about',
   },
   {
     name: 'BLOGS',
-    route: '/blogs',
+    path: '/blogs',
   },
   {
     name: 'CONTACT',
-    route: '/contact',
+    path: '/contact',
+  },
+  {
+    name: 'PORTFOLIOS',
+    path: '/portfolios',
+  },
+  {
+    name: 'RESUME',
+    path: '/resume',
   },
 ]

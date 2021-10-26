@@ -31,9 +31,10 @@ export const StyledNavigator = styled.nav`
 
       a {
         display: block;
-        padding: 0.2rem 0;
+        padding: 0.45rem 0;
         position: relative;
         z-index: 2;
+        color: whitesmoke;
         &:hover {
           cursor: pointer;
         }

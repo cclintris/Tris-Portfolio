@@ -1,6 +1,8 @@
 import React from 'react'
 import { StyledMainContent } from './styles'
-import Home from '../pages/Home'
+import { Route, Switch } from 'react-router'
+import { get_Route_JSX_According_to_Path } from '../utils'
+import { routes } from '../routes'
 
 const Main = () => {
   return (
@@ -11,7 +13,14 @@ const Main = () => {
         <div className="line-3"></div>
         <div className="line-4"></div>
       </div>
-      <Home />
+
+      <Switch>
+        {routes.map(({ path }, key) => (
+          <Route path={path} key={key} exact>
+            {get_Route_JSX_According_to_Path(path)}
+          </Route>
+        ))}
+      </Switch>
     </StyledMainContent>
   )
 }
