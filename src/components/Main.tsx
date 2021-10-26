@@ -4,7 +4,7 @@ import { Route, Switch } from 'react-router'
 import { get_Route_JSX_According_to_Path } from '../utils'
 import { routes } from '../routes'
 
-const Main = () => {
+const Main: React.FC = () => {
   return (
     <StyledMainContent>
       <div className="lines">
