@@ -1,8 +1,8 @@
-import React from 'react'
-import { StyledMainContent } from './styles'
-import { Route, Switch } from 'react-router'
-import { get_Route_JSX_According_to_Path } from '../utils'
-import { routes } from '../routes'
+import React from 'react';
+import { StyledMainContent } from './styles';
+import { Route, Switch } from 'react-router';
+import { get_Route_JSX_According_to_Path } from '../utils';
+import { routes } from '../routes';
 
 const Main: React.FC = () => {
   return (
@@ -22,7 +22,7 @@ const Main: React.FC = () => {
         ))}
       </Switch>
     </StyledMainContent>
-  )
-}
+  );
+};
 
-export default Main
+export default Main;

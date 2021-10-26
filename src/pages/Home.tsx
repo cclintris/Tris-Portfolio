@@ -1,11 +1,11 @@
-import React from 'react'
-import { StyledHome } from './styles/home'
-import Particle from '../components/Particle'
-import FacebookIcon from '@material-ui/icons/Facebook'
-import GithubIcon from '@material-ui/icons/GitHub'
-import InstagramIcon from '@material-ui/icons/Instagram'
+import React from 'react';
+import { StyledHome } from './styles/home';
+import Particle from '../components/Particle';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import GithubIcon from '@material-ui/icons/GitHub';
+import InstagramIcon from '@material-ui/icons/Instagram';
 
-const Home = () => {
+const Home: React.FC = () => {
   return (
     <StyledHome>
       <div className="bg-particles">
@@ -41,7 +41,7 @@ const Home = () => {
         </h1>
       </div>
     </StyledHome>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

@@ -1,10 +1,12 @@
+import { Route } from './interface';
+
 /**
  * @global Global routes
  * @author cclintris
  * @since 2021/10/23
  */
 
-export const routes = [
+export const routes: Route[] = [
   {
     name: 'HOME',
     path: '/',
@@ -29,4 +31,4 @@ export const routes = [
     name: 'RESUME',
     path: '/resume',
   },
-]
+];
