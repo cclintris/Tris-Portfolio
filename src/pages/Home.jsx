@@ -22,13 +22,19 @@ const Home = () => {
             well !
           </p>
           <div className="icons">
-            <a className="icon i-facebook">
+            <a
+              className="icon i-facebook"
+              href="https://www.facebook.com/profile.php?id=100008932784077"
+            >
               <FacebookIcon />
             </a>
-            <a className="icon i-github">
+            <a className="icon i-github" href="https://github.com/cclintris">
               <GithubIcon />
             </a>
-            <a className="icon i-instagram">
+            <a
+              className="icon i-instagram"
+              href="https://www.instagram.com/tristancclin/"
+            >
               <InstagramIcon />
             </a>
           </div>

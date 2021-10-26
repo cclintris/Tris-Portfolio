@@ -71,7 +71,7 @@ export const StyledNavigator = styled.nav`
       display: block;
       text-align: center;
       padding: 1rem 0;
-      font-size: 1rem;
+      font-size: 0.85rem;
     }
   }
 `
