@@ -1,7 +1,7 @@
-import React from 'react'
-import Particles from 'react-particles-js'
+import React from 'react';
+import Particles from 'react-particles-js';
 
-const Particle = () => {
+const Particle: React.FC = () => {
   return (
     <Particles
       width="100%"
@@ -65,7 +65,7 @@ const Particle = () => {
         },
       }}
     />
-  )
-}
+  );
+};
 
-export default Particle
+export default Particle;

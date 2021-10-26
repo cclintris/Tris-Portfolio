@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
   :root {
@@ -48,6 +48,6 @@ const GlobalStyles = createGlobalStyle`
       font-size: 1rem;
     }
   }
-`
+`;
 
-export default GlobalStyles
+export default GlobalStyles;

@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const StyledNavigator = styled.nav`
   display: flex;
@@ -75,4 +75,4 @@ export const StyledNavigator = styled.nav`
       font-size: 0.85rem;
     }
   }
-`
+`;

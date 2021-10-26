@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const StyledMainContent = styled.main`
   position: relative;
@@ -21,4 +21,4 @@ export const StyledMainContent = styled.main`
       background-color: var(--border-color);
     }
   }
-`
+`;

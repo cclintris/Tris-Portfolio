@@ -1,10 +1,10 @@
-import React from 'react'
-import avatar from '../assets/img/avatar.jpg'
-import { StyledNavigator } from './styles'
-import { NavLink } from 'react-router-dom'
-import { routes } from '../routes'
+import React from 'react';
+import avatar from '../assets/img/avatar.jpg';
+import { StyledNavigator } from './styles';
+import { NavLink } from 'react-router-dom';
+import { routes } from '../routes';
 
-const Navigator = () => {
+const Navigator: React.FC = () => {
   return (
     <StyledNavigator>
       <div className="avatar">
@@ -23,7 +23,7 @@ const Navigator = () => {
         <p>@2021 Tristan's personal website</p>
       </footer>
     </StyledNavigator>
-  )
-}
+  );
+};
 
-export default Navigator
+export default Navigator;
