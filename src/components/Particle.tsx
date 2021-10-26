@@ -1,7 +1,7 @@
 import React from 'react';
 import Particles from 'react-particles-js';
 
-const Particle: React.FC = () => {
+const Particle: React.FC = (): JSX.Element => {
   return (
     <Particles
       width="100%"

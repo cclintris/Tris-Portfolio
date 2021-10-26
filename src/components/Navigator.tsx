@@ -4,7 +4,7 @@ import { StyledNavigator } from './styles';
 import { NavLink } from 'react-router-dom';
 import { routes } from '../routes';
 
-const Navigator: React.FC = () => {
+const Navigator: React.FC = (): JSX.Element => {
   return (
     <StyledNavigator>
       <div className="avatar">

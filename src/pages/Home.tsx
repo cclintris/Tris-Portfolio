@@ -5,7 +5,7 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import GithubIcon from '@material-ui/icons/GitHub';
 import InstagramIcon from '@material-ui/icons/Instagram';
 
-const Home: React.FC = () => {
+const Home: React.FC = (): JSX.Element => {
   return (
     <StyledHome>
       <div className="bg-particles">
