@@ -1,5 +1,5 @@
 import React from 'react';
-import avatar from '../assets/img/avatar.jpg';
+import avatar from '../assets/img/avatar.jpeg';
 import { StyledNavigator } from './styles';
 import { NavLink } from 'react-router-dom';
 import { routes } from '../routes';
@@ -8,7 +8,7 @@ const Navigator: React.FC = (): JSX.Element => {
   return (
     <StyledNavigator>
       <div className="avatar">
-        <img src={avatar} alt="" />
+        <img src={avatar} alt="avatar" />
       </div>
       <ul className="nav-items">
         {routes.map(({ name, path }, key) => (

@@ -1,13 +1,13 @@
 import React from 'react';
 import { StyledImageSection } from './styles';
 import PrimaryButton from './PrimaryButton';
-import resume from '../assets/img/resume.jpg';
+import aboutme from '../assets/img/about-me.jpeg';
 
 const ImageSection: React.FC = (): JSX.Element => {
   return (
     <StyledImageSection>
       <div className="left-content">
-        <img src={resume} alt="resume" />
+        <img src={aboutme} alt="resume" />
       </div>
       <div className="right-content">
         <h4>
