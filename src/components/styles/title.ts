@@ -5,10 +5,10 @@ export const StyledTitle = styled.div`
 
   h2 {
     color: var(--white-color);
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 600;
     /* text-transform: uppercase; */
-    position: relative;
+    position: inherit;
     padding-bottom: 0.8rem;
     &::before {
       content: '';

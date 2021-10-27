@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const LayoutStyles = styled.div`
-  padding: 5rem;
+  padding: 1.5rem 3rem;
 `;
 
 export default LayoutStyles;
