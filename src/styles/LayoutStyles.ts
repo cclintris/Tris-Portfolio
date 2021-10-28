@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 
-const LayoutStyles = styled.div`
+export const MainLayout = styled.div`
   padding: 1.5rem 3rem;
 `;
 
-export default LayoutStyles;
+export const InnerLayout = styled.div`
+  padding: 1.5rem 0;
+`;

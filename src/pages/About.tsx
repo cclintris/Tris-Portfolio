@@ -1,17 +1,19 @@
 import React from 'react';
 import { StyledAbout } from './styles';
-import LayoutStyles from '../styles/LayoutStyles';
+import { MainLayout } from '../styles/LayoutStyles';
 import Title from '../components/Title';
 import ImageSection from '../components/ImageSection';
+import ServiceSection from '../components/ServiceSection';
 
 const About: React.FC = (): JSX.Element => {
   return (
-    <LayoutStyles>
+    <MainLayout>
       <StyledAbout>
         <Title title="About me" span="About me" />
         <ImageSection />
+        <ServiceSection />
       </StyledAbout>
-    </LayoutStyles>
+    </MainLayout>
   );
 };
 
