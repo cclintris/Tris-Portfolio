@@ -1,42 +1,38 @@
 import React from 'react';
 import { StyledImageSection } from './styles';
-import PrimaryButton from './PrimaryButton';
+import Button from './Button';
 import aboutme from '../assets/img/about-me.jpeg';
+import { paragraph, info } from './text';
+import { E_buttonType, E_buttonShape } from './configs/enum';
 
 const ImageSection: React.FC = (): JSX.Element => {
   return (
     <StyledImageSection>
       <div className="left-content">
-        <img src={aboutme} alt="resume" />
+        <img src={aboutme} alt="about me" />
       </div>
       <div className="right-content">
         <h4>
-          I am <span>Tristan Lin</span>
+          I am <span>Tristan Lin</span> ,
         </h4>
-        <p className="paragraph">
-          I am Tristan Lin, a software engineer focused and passionate in
-          frontend web development. Loves coding, basketball, music and also a
-          cat person!
-        </p>
+        <p className="paragraph">{paragraph}</p>
         <div className="about-info">
           <div className="info-title">
-            <p>Full Name </p>
-            <p>Age </p>
-            <p>Nationality </p>
-            <p>Languages </p>
-            <p>Location </p>
-            <p>Occupation</p>
+            {info.map(({ attr }, key) => (
+              <p key={key}>{attr} </p>
+            ))}
           </div>
           <div className="info">
-            <p>: Tristan Lin</p>
-            <p>: 21</p>
-            <p>: USA / Taiwan</p>
-            <p>: English / Mandarin</p>
-            <p>: Nanjing, China</p>
-            <p>: NJU University Student (Senior)</p>
+            {info.map(({ value }, key) => (
+              <p key={key}>: {value} </p>
+            ))}
           </div>
         </div>
-        <PrimaryButton text="Download CV" />
+        <Button
+          text="Download CV"
+          type={E_buttonType.primary}
+          shape={E_buttonShape.round}
+        />
       </div>
     </StyledImageSection>
   );

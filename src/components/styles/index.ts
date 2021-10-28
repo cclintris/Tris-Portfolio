@@ -3,7 +3,7 @@ import { StyledNavigator } from './navigator';
 import { StyledMainContent } from './main';
 import { StyledTitle } from './title';
 import { StyledImageSection } from './image-section';
-import { StyledPrimaryButton } from './primary-button';
+import { StyledButton } from './button';
 
 export {
   StyledSidebar,
@@ -11,5 +11,5 @@ export {
   StyledMainContent,
   StyledTitle,
   StyledImageSection,
-  StyledPrimaryButton,
+  StyledButton,
 };

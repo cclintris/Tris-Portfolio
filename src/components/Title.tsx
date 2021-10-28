@@ -1,11 +1,11 @@
 import React from 'react';
 import { StyledTitle } from './styles';
-import { TitleProps } from './props';
+import { I_TitleProps } from './props';
 
-const Title: React.FC<TitleProps> = ({
+const Title: React.FC<I_TitleProps> = ({
   title,
   span,
-}: TitleProps): JSX.Element => {
+}: I_TitleProps): JSX.Element => {
   return (
     <StyledTitle>
       <h2>

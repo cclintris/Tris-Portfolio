@@ -11,6 +11,7 @@ export const StyledMainContent = styled.main`
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    z-index: -100;
 
     .line-1,
     .line-2,

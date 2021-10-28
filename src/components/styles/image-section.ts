@@ -10,7 +10,7 @@ export const StyledImageSection = styled.div`
     margin-right: 0.5rem;
 
     img {
-      width: 90%;
+      width: 85%;
       height: 100%;
       object-fit: cover;
     }
