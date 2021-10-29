@@ -1,6 +1,6 @@
 import { Info, Service } from './interface';
-import design from '../../assets/img/design.svg';
-import brain from '../../assets/img/brain.svg';
+import frontend from '../../assets/img/frontend.svg';
+import teach from '../../assets/img/teach.svg';
 
 export const paragraph: string =
   'a software engineer focused and passionate in frontend web development. Loves coding, basketball, music and also a cat person!';
@@ -34,13 +34,13 @@ export const info: Info[] = [
 
 export const services: Service[] = [
   {
-    image: design,
+    image: frontend,
     title: 'Software development',
     paragraph:
       'Front end stack developer, expertise in React.js, Vue.js, TS, JS, etc .',
   },
   {
-    image: brain,
+    image: teach,
     title: 'Frontend Web learning',
     paragraph:
       'Provide comprehensive and efficient learning route of front end web development.',
