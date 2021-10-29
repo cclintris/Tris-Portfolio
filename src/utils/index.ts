@@ -6,7 +6,7 @@ import Contact from '../pages/Contact';
 import Portfolios from '../pages/Portfolios';
 import Resume from '../pages/Resume';
 import NotFound from '../pages/NotFound';
-import { ReactElement } from 'react-transition-group/node_modules/@types/react';
+import { ReactElement } from 'hoist-non-react-statics/node_modules/@types/react';
 import { E_buttonType, E_buttonShape } from '../components/configs/enum';
 import { buttonColor, buttonBorderRadius } from '../components/configs';
 
