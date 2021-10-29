@@ -2,7 +2,7 @@ import React from 'react';
 import { StyledImageSection } from './styles';
 import Button from './Button';
 import aboutme from '../assets/img/about-me.jpeg';
-import { paragraph, info } from './text';
+import { paragraph, info } from './data';
 import { E_buttonType, E_buttonShape } from './configs/enum';
 
 const ImageSection: React.FC = (): JSX.Element => {

@@ -15,3 +15,9 @@ export interface I_StyledButtonProps {
   type: E_buttonType;
   shape: E_buttonShape;
 }
+
+export interface I_CardProps {
+  image: any;
+  title: string;
+  paragraph: string;
+}

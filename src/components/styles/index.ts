@@ -5,6 +5,7 @@ import { StyledTitle } from './title';
 import { StyledImageSection } from './image-section';
 import { StyledButton } from './button';
 import { StyledServiceSection } from './service-section';
+import { StyledCard } from './card';
 
 export {
   StyledSidebar,
@@ -14,4 +15,5 @@ export {
   StyledImageSection,
   StyledButton,
   StyledServiceSection,
+  StyledCard,
 };
