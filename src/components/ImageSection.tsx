@@ -31,7 +31,7 @@ const ImageSection: React.FC = (): JSX.Element => {
         <Button
           text="Download CV"
           type={E_buttonType.primary}
-          shape={E_buttonShape.round}
+          shape={E_buttonShape.default}
         />
       </div>
     </StyledImageSection>

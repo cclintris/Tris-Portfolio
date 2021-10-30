@@ -12,14 +12,26 @@ export const StyledButton = styled.a<I_StyledButtonProps>`
   font-size: inherit;
   /* text-transform: uppercase; */
   position: relative;
-  &:hover::after {
+  &::after {
     content: '';
     position: absolute;
-    width: calc(100% - ${(props) => resolve_button_shape(props.shape)});
-    height: 0.2rem;
-    background-color: var(--white-color);
-    left: 20px;
+    left: ${(props) =>
+      Number(
+        resolve_button_shape(props.shape).substring(
+          0,
+          resolve_button_shape(props.shape).length - 2
+        )
+      ) /
+        2 +
+      'px'};
     bottom: 0;
+    width: 0;
+    height: 0.2rem;
     transition: all 0.4s ease-in-out;
+    opacity: 0.7;
+  }
+  &:hover::after {
+    width: calc(100% - ${(props) => resolve_button_shape(props.shape)});
+    background-color: var(--white-color);
   }
 `;

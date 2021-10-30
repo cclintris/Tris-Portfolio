@@ -11,8 +11,8 @@ const ServiceSection: React.FC = (): JSX.Element => {
       <StyledServiceSection>
         <Title title="Services" span="services" />
         <div className="services">
-          {services.map(({ image, title, paragraph }) => (
-            <Card image={image} title={title} paragraph={paragraph} />
+          {services.map(({ image, title, paragraph }, key) => (
+            <Card image={image} title={title} paragraph={paragraph} key={key} />
           ))}
         </div>
       </StyledServiceSection>

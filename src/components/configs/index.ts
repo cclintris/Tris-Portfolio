@@ -11,5 +11,5 @@ export const buttonColor = {
 export const buttonBorderRadius = {
   [E_buttonShape.circle]: '50%',
   [E_buttonShape.round]: '40px',
-  [E_buttonShape.default]: 'none',
+  [E_buttonShape.default]: '0px',
 };
