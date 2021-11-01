@@ -8,3 +8,8 @@ export interface Service {
   title: string;
   paragraph: string;
 }
+
+export interface Hobby {
+  title: string;
+  image: any;
+}

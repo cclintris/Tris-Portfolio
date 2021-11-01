@@ -21,3 +21,8 @@ export interface I_CardProps {
   title: string;
   paragraph: string;
 }
+
+export interface I_HobbyItemProps {
+  title: string;
+  image: any;
+}

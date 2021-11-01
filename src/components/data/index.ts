@@ -1,6 +1,11 @@
-import { Info, Service } from './interface';
+import { Info, Service, Hobby } from './interface';
 import frontend from '../../assets/img/frontend.svg';
 import teach from '../../assets/img/teach.svg';
+import basketball from '../../assets/img/basketball.svg';
+import billard from '../../assets/img/billard.svg';
+import chess from '../../assets/img/chess.svg';
+import sing from '../../assets/img/sing.svg';
+import violin from '../../assets/img/violin.svg';
 
 export const paragraph: string =
   'a software engineer focused and passionate in frontend web development. Loves coding, basketball, music and also a cat person!';
@@ -44,5 +49,28 @@ export const services: Service[] = [
     title: 'Frontend Web learning',
     paragraph:
       'Provide comprehensive and efficient learning route of front end web development.',
+  },
+];
+
+export const hobbies: Hobby[] = [
+  {
+    title: 'Basketball',
+    image: basketball,
+  },
+  {
+    title: 'Billard ball',
+    image: billard,
+  },
+  {
+    title: 'Chinese Chess',
+    image: chess,
+  },
+  {
+    title: 'Singing',
+    image: sing,
+  },
+  {
+    title: 'Violin',
+    image: violin,
   },
 ];
