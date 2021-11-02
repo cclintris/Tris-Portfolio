@@ -20,15 +20,15 @@ export const routes: Route[] = [
     path: '/blogs',
   },
   {
-    name: 'CONTACT',
-    path: '/contact',
-  },
-  {
     name: 'PORTFOLIOS',
     path: '/portfolios',
   },
   {
     name: 'RESUME',
     path: '/resume',
+  },
+  {
+    name: 'CONTACT',
+    path: '/contact',
   },
 ];
