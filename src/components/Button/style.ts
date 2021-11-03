@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { resolve_button_color, resolve_button_shape } from '../../utils/index';
+import { resolve_button_color, resolve_button_shape } from './utils';
 import { I_StyledButtonProps } from './interface';
 
 export const StyledButton = styled.a<I_StyledButtonProps>`

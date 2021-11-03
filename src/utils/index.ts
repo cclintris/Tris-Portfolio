@@ -7,8 +7,6 @@ import Portfolios from '../pages/Portfolios';
 import Resume from '../pages/Resume';
 import NotFound from '../pages/NotFound';
 import { ReactElement } from 'hoist-non-react-statics/node_modules/@types/react';
-import { E_buttonShape, E_buttonType } from '../components/Button/enum';
-import { buttonColor, buttonBorderRadius } from '../components/Button/config';
 
 export const get_Route_JSX_According_to_Path = (path: string): ReactElement => {
   switch (path) {
@@ -28,12 +26,4 @@ export const get_Route_JSX_According_to_Path = (path: string): ReactElement => {
       console.error('No such route!');
       return React.createElement(NotFound, null, null);
   }
-};
-
-export const resolve_button_color = (type: E_buttonType): string => {
-  return buttonColor[type];
-};
-
-export const resolve_button_shape = (shape: E_buttonShape): string => {
-  return buttonBorderRadius[shape];
 };
