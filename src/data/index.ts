@@ -1,11 +1,11 @@
 import { Info, Service, Hobby } from './interface';
-import frontend from '../../assets/img/frontend.svg';
-import teach from '../../assets/img/teach.svg';
-import basketball from '../../assets/img/basketball.svg';
-import billard from '../../assets/img/billard.svg';
-import chess from '../../assets/img/chess.svg';
-import sing from '../../assets/img/sing.svg';
-import violin from '../../assets/img/violin.svg';
+import frontend from '../assets/img/frontend.svg';
+import teach from '../assets/img/teach.svg';
+import basketball from '../assets/img/basketball.svg';
+import billard from '../assets/img/billard.svg';
+import chess from '../assets/img/chess.svg';
+import sing from '../assets/img/sing.svg';
+import violin from '../assets/img/violin.svg';
 
 export const paragraph: string =
   'a software engineer focused and passionate in frontend web development. Loves coding, basketball, music and also a cat person!';

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { resolve_button_color, resolve_button_shape } from '../../utils/index';
-import { I_StyledButtonProps } from '../props';
+import { I_StyledButtonProps } from './interface';
 
 export const StyledButton = styled.a<I_StyledButtonProps>`
   background-color: ${(props) => resolve_button_color(props.type)};

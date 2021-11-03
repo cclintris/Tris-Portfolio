@@ -7,8 +7,8 @@ import Portfolios from '../pages/Portfolios';
 import Resume from '../pages/Resume';
 import NotFound from '../pages/NotFound';
 import { ReactElement } from 'hoist-non-react-statics/node_modules/@types/react';
-import { E_buttonType, E_buttonShape } from '../components/configs/enum';
-import { buttonColor, buttonBorderRadius } from '../components/configs';
+import { E_buttonShape, E_buttonType } from '../components/Button/enum';
+import { buttonColor, buttonBorderRadius } from '../components/Button/config';
 
 export const get_Route_JSX_According_to_Path = (path: string): ReactElement => {
   switch (path) {

@@ -1,8 +1,8 @@
 import React from 'react';
-import { StyledMainContent } from './styles';
+import { StyledMainContent } from './style';
 import { Route, Switch } from 'react-router';
-import { get_Route_JSX_According_to_Path } from '../utils';
-import { routes } from '../routes';
+import { get_Route_JSX_According_to_Path } from '../../utils';
+import { routes } from '../../routes';
 
 const Main: React.FC = (): JSX.Element => {
   return (

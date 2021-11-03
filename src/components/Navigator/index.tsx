@@ -1,8 +1,8 @@
 import React from 'react';
-import avatar from '../assets/img/avatar.jpeg';
-import { StyledNavigator } from './styles';
+import avatar from '../../assets/img/avatar.jpeg';
+import { StyledNavigator } from './style';
 import { NavLink } from 'react-router-dom';
-import { routes } from '../routes';
+import { routes } from '../../routes';
 
 const Navigator: React.FC = (): JSX.Element => {
   return (

@@ -1,9 +1,9 @@
 import React from 'react';
-import { InnerLayout } from '../styles/LayoutStyles';
-import { StyledHobbySection } from './styles';
-import Title from './Title';
+import { InnerLayout } from '../../styles/LayoutStyles';
+import { StyledHobbySection } from './style';
+import Title from '../Title';
 import HobbyItem from './HobbyItem';
-import { hobbies } from './data';
+import { hobbies } from '../../data';
 
 const HobbySection: React.FC = (): JSX.Element => {
   return (

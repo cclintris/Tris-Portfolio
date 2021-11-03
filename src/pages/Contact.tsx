@@ -1,9 +1,9 @@
 import React from 'react';
 import { StyledContact } from './styles';
 import { MainLayout, InnerLayout } from '../styles/LayoutStyles';
-import Title from '../components/Title';
-import Button from '../components/Button';
-import { E_buttonType, E_buttonShape } from '../components/configs/enum';
+import { Title } from '../components';
+import { Button } from '../components';
+import { E_buttonType, E_buttonShape } from '../components/Button/enum';
 
 const Contact: React.FC = (): JSX.Element => {
   return (
@@ -23,7 +23,7 @@ const Contact: React.FC = (): JSX.Element => {
                 <input type="text" id="name" />
               </div>
               <div className="form-field">
-                <label htmlFor="email" id="name">
+                <label htmlFor="email" id="email">
                   Enter your email*
                 </label>
                 <input type="email" id="email" />
@@ -45,7 +45,7 @@ const Contact: React.FC = (): JSX.Element => {
               </div>
               <div className="form-field">
                 <Button
-                  text="Send email"
+                  text="Submit"
                   shape={E_buttonShape.default}
                   type={E_buttonType.primary}
                 />

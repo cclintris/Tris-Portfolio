@@ -1,6 +1,6 @@
 import React from 'react';
-import { StyledSidebar } from './styles';
-import Navigator from './Navigator';
+import { StyledSidebar } from './style';
+import Navigator from '../Navigator';
 
 const Sidebar: React.FC = (): JSX.Element => {
   return (

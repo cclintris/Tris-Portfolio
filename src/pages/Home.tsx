@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyledHome } from './styles/home';
-import Particle from '../components/Particle';
+import { Particle } from '../components';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import GithubIcon from '@material-ui/icons/GitHub';
 import InstagramIcon from '@material-ui/icons/Instagram';

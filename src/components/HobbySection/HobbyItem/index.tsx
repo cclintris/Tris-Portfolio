@@ -1,6 +1,6 @@
 import React from 'react';
-import { StyledHobbyItem } from './styles';
-import { I_HobbyItemProps } from './props';
+import { StyledHobbyItem } from './style';
+import { I_HobbyItemProps } from './interface';
 
 const ReviewItem: React.FC<I_HobbyItemProps> = ({
   title,

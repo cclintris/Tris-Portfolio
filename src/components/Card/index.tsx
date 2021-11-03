@@ -1,6 +1,6 @@
 import React from 'react';
-import { I_CardProps } from './props';
-import { StyledCard } from './styles';
+import { I_CardProps } from './interface';
+import { StyledCard } from './style';
 
 const Card: React.FC<I_CardProps> = ({
   image,

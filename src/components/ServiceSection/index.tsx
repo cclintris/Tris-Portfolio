@@ -1,9 +1,9 @@
 import React from 'react';
-import { InnerLayout } from '../styles/LayoutStyles';
-import { StyledServiceSection } from './styles';
-import Title from './Title';
-import Card from './Card';
-import { services } from './data';
+import { InnerLayout } from '../../styles/LayoutStyles';
+import { StyledServiceSection } from './style';
+import Title from '../Title';
+import Card from '../Card';
+import { services } from '../../data';
 
 const ServiceSection: React.FC = (): JSX.Element => {
   return (

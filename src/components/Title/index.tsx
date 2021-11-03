@@ -1,6 +1,6 @@
 import React from 'react';
-import { StyledTitle } from './styles';
-import { I_TitleProps } from './props';
+import { StyledTitle } from './style';
+import { I_TitleProps } from './interface';
 
 const Title: React.FC<I_TitleProps> = ({
   title,
