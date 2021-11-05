@@ -21,26 +21,6 @@ export const StyledContact = styled.section`
         margin-top: 2rem;
         position: relative;
 
-        label {
-          position: absolute;
-          left: 20px;
-          top: -19px;
-          display: inline-block;
-          background-color: var(--background-dark-color);
-          padding: 0 0.5rem;
-          color: inherit;
-        }
-
-        input {
-          width: 100%;
-          border: 1px solid var(--border-color);
-          outline: none;
-          background: transparent;
-          height: 50px;
-          padding: 0 15px;
-          color: inherit;
-        }
-
         textarea {
           background: transparent;
           border: 1px solid var(--border-color);

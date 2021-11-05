@@ -4,8 +4,12 @@ import { MainLayout, InnerLayout } from '../styles/LayoutStyles';
 import { Title } from '../components';
 import { Button } from '../components';
 import { E_buttonType, E_buttonShape } from '../components/Button/enum';
+import { contactForm } from './config';
+import { useForm } from '../hooks/useForm';
 
 const Contact: React.FC = (): JSX.Element => {
+  const [renderFormUnit] = useForm(contactForm);
+
   return (
     <MainLayout>
       <Title title="Contact" span="Contact" />
@@ -16,24 +20,7 @@ const Contact: React.FC = (): JSX.Element => {
               <h4>Get in touch with me ~</h4>
             </div>
             <form className="form">
-              <div className="form-field">
-                <label htmlFor="name" id="name">
-                  Enter your name*
-                </label>
-                <input type="text" id="name" />
-              </div>
-              <div className="form-field">
-                <label htmlFor="email" id="email">
-                  Enter your email*
-                </label>
-                <input type="email" id="email" />
-              </div>
-              <div className="form-field">
-                <label htmlFor="subject" id="subject">
-                  Enter your subject
-                </label>
-                <input type="text" id="subject" />
-              </div>
+              {renderFormUnit()}
               <div className="form-field">
                 <label htmlFor="text-area">Enter your message*</label>
                 <textarea

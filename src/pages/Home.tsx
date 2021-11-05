@@ -23,13 +23,17 @@ const Home: React.FC = (): JSX.Element => {
             well !
           </p>
           <div className="icons">
-            <a className="icon i-facebook" href={FACEBOOK_LINK}>
+            <a className="icon i-facebook" href={FACEBOOK_LINK} target="_blank">
               <FacebookIcon />
             </a>
-            <a className="icon i-github" href={GITHUB_LINK}>
+            <a className="icon i-github" href={GITHUB_LINK} target="_blank">
               <GithubIcon />
             </a>
-            <a className="icon i-instagram" href={INSTAGRAM_LINK}>
+            <a
+              className="icon i-instagram"
+              href={INSTAGRAM_LINK}
+              target="_blank"
+            >
               <InstagramIcon />
             </a>
           </div>
