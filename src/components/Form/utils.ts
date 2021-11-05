@@ -1,16 +1,25 @@
 import React from 'react';
 import { I_FormField } from './interface';
 import { FormItem } from './FormItem';
+import { E_FormItemType } from './FormItem/enum';
 
 export const createFormFieldConfig = (
   id: string,
   label: string,
   name: string,
-  type: string,
+  type: E_FormItemType,
   defaultValue = ''
 ): I_FormField => {
   return {
-    renderFormField: (handleChange, value, isValid, errMsg, key) => {
+    renderFormField: (
+      handleChange,
+      value,
+      isValid,
+      errMsg,
+      key,
+      cols = 30,
+      rows = 10
+    ) => {
       return React.createElement(
         FormItem,
         {
@@ -23,6 +32,8 @@ export const createFormFieldConfig = (
           value,
           name,
           key,
+          cols,
+          rows,
         },
         null
       );

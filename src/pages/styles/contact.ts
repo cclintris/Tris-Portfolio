@@ -20,15 +20,6 @@ export const StyledContact = styled.section`
         width: 100%;
         margin-top: 2rem;
         position: relative;
-
-        textarea {
-          background: transparent;
-          border: 1px solid var(--border-color);
-          outline: none;
-          color: inherit;
-          width: 100%;
-          padding: 0.8rem 1rem;
-        }
       }
     }
   }

@@ -17,19 +17,10 @@ const Contact: React.FC = (): JSX.Element => {
         <InnerLayout className="contact-section">
           <div className="left-content">
             <div className="contact-title">
-              <h4>Get in touch with me ~</h4>
+              {/* <h4>Get in touch with me ~</h4> */}
             </div>
             <form className="form">
               {renderFormUnit()}
-              <div className="form-field">
-                <label htmlFor="text-area">Enter your message*</label>
-                <textarea
-                  name="textarea"
-                  id="textarea"
-                  cols={30}
-                  rows={10}
-                ></textarea>
-              </div>
               <div className="form-field">
                 <Button
                   text="Submit"

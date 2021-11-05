@@ -1,8 +1,9 @@
 import React from 'react';
-import { I_FormItemProps } from './interface';
+import { T_FormItem } from './type';
 import { StyledFormItem } from './style';
+import { get_formItem_According_to_type } from './utils';
 
-export const FormItem: React.FC<I_FormItemProps> = ({
+export const FormItem: React.FC<T_FormItem> = ({
   id,
   label,
   type,
@@ -11,17 +12,21 @@ export const FormItem: React.FC<I_FormItemProps> = ({
   isValid,
   value,
   name,
-}: I_FormItemProps): JSX.Element => {
+  cols,
+  rows,
+}: T_FormItem): JSX.Element => {
   return (
     <StyledFormItem>
       <label id={id}>{label}</label>
-      <input
-        type={type}
-        id={id}
-        value={value}
-        name={name}
-        onChange={handleChange}
-      />
+      {get_formItem_According_to_type({
+        type,
+        id,
+        value,
+        name,
+        handleChange,
+        cols,
+        rows,
+      })}
       {errMsg && !isValid && <span>{errMsg}</span>}
     </StyledFormItem>
   );
