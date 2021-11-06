@@ -1,7 +1,7 @@
 import React from 'react';
 import { T_FormItem } from './type';
 import { StyledFormItem } from './style';
-import { get_formItem_According_to_type } from './utils';
+import { get_formItem_input, get_formItem_textarea } from './utils';
 
 export const FormItem: React.FC<T_FormItem> = ({
   id,
@@ -18,15 +18,8 @@ export const FormItem: React.FC<T_FormItem> = ({
   return (
     <StyledFormItem>
       <label id={id}>{label}</label>
-      {get_formItem_According_to_type({
-        type,
-        id,
-        value,
-        name,
-        handleChange,
-        cols,
-        rows,
-      })}
+      {get_formItem_input({ id, type, name, value, handleChange })}
+      {get_formItem_textarea({ id, type, name, cols, rows })}
       {errMsg && !isValid && <span>{errMsg}</span>}
     </StyledFormItem>
   );

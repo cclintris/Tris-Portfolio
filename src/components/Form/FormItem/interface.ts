@@ -7,12 +7,12 @@ export interface I_FormItemProps {
   isValid?: boolean;
   name: string;
   id: string;
-  value: string;
-  handleChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  type: E_FormItemType;
 }
 
 export interface I_InputProps extends I_FormItemProps {
-  type: E_FormItemType;
+  handleChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  value: string;
 }
 
 export interface I_TextAreaProps extends I_FormItemProps {
