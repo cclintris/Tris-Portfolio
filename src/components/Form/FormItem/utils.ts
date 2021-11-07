@@ -8,7 +8,7 @@ export const get_formItem_input = (props: I_InputProps) => {
 };
 
 export const get_formItem_textarea = (props: I_TextAreaProps) => {
-  const { id, type, name, cols, rows } = props;
-  const newProps = { id, type, name, cols, rows };
+  const { id, type, name, cols, rows, handleChange } = props;
+  const newProps = { id, type, name, cols, rows, handleChange };
   return textarea_TSX(newProps);
 };

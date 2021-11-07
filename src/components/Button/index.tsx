@@ -6,9 +6,11 @@ const Button: React.FC<I_ButtonProps> = ({
   text,
   type,
   shape,
+  disabled,
 }: I_ButtonProps): JSX.Element => {
+  // console.log('button disabled', disabled);
   return (
-    <StyledButton type={type} shape={shape}>
+    <StyledButton type={type} shape={shape} disabled={disabled}>
       {text}
     </StyledButton>
   );

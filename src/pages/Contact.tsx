@@ -8,7 +8,7 @@ import { contactForm } from './config';
 import { useForm } from '../hooks/useForm';
 
 const Contact: React.FC = (): JSX.Element => {
-  const [renderFormUnit] = useForm(contactForm);
+  const [renderFormUnit, isFormValid] = useForm(contactForm);
 
   return (
     <MainLayout>
@@ -26,6 +26,7 @@ const Contact: React.FC = (): JSX.Element => {
                   text="Submit"
                   shape={E_buttonShape.default}
                   type={E_buttonType.primary}
+                  disabled={!isFormValid()}
                 />
               </div>
             </form>

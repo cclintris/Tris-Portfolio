@@ -1,6 +1,7 @@
 import { createFormFieldConfig } from '../../components/Form/utils';
 import { T_ContactForm } from './type';
 import { E_FormItemType } from '../../components/Form/FormItem/enum';
+import { requiredRule } from './validation-rules';
 
 export const contactForm: T_ContactForm = {
   name: {
@@ -10,6 +11,7 @@ export const contactForm: T_ContactForm = {
       'name',
       E_FormItemType.text
     ),
+    validationRules: [requiredRule('name')],
   },
   email: {
     ...createFormFieldConfig(
@@ -18,6 +20,7 @@ export const contactForm: T_ContactForm = {
       'email',
       E_FormItemType.email
     ),
+    validationRules: [requiredRule('email')],
   },
   subject: {
     ...createFormFieldConfig(
@@ -26,6 +29,7 @@ export const contactForm: T_ContactForm = {
       'subject',
       E_FormItemType.text
     ),
+    validationRules: [requiredRule('subject')],
   },
   message: {
     ...createFormFieldConfig(
@@ -34,5 +38,6 @@ export const contactForm: T_ContactForm = {
       'message',
       E_FormItemType.textarea
     ),
+    validationRules: [requiredRule('message')],
   },
 };

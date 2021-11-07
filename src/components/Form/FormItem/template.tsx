@@ -25,8 +25,15 @@ export const textarea_TSX = ({
   id,
   cols,
   rows,
+  handleChange,
 }: I_TextAreaProps) => {
   return type === E_FormItemType.textarea ? (
-    <textarea name={name} id={id} cols={cols} rows={rows}></textarea>
+    <textarea
+      name={name}
+      id={id}
+      cols={cols}
+      rows={rows}
+      onChange={handleChange}
+    ></textarea>
   ) : null;
 };

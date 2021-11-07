@@ -2,7 +2,9 @@ import React from 'react';
 
 export interface I_FormField {
   renderFormField: (
-    handleChange: (e: React.ChangeEvent<HTMLInputElement>) => void,
+    handleChange: (
+      e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    ) => void,
     value: string,
     isValid: boolean,
     errMsg: string,
@@ -13,5 +15,11 @@ export interface I_FormField {
   valid: boolean;
   errMsg: string;
   touched: boolean;
-  validationRules: any[];
+  validationRules: I_ValidationRule[];
+}
+
+export interface I_ValidationRule {
+  ruleName: string;
+  errMsg: string;
+  validator: (inputValue: string) => boolean;
 }

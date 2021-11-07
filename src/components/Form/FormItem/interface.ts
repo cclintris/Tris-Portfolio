@@ -16,6 +16,7 @@ export interface I_InputProps extends I_FormItemProps {
 }
 
 export interface I_TextAreaProps extends I_FormItemProps {
+  handleChange: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
   cols: number;
   rows: number;
 }

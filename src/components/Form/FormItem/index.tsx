@@ -19,7 +19,7 @@ export const FormItem: React.FC<T_FormItem> = ({
     <StyledFormItem>
       <label id={id}>{label}</label>
       {get_formItem_input({ id, type, name, value, handleChange })}
-      {get_formItem_textarea({ id, type, name, cols, rows })}
+      {get_formItem_textarea({ id, type, name, cols, rows, handleChange })}
       {errMsg && !isValid && <span>{errMsg}</span>}
     </StyledFormItem>
   );

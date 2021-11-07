@@ -1,5 +1,5 @@
 import React from 'react';
-import { I_FormField } from './interface';
+import { I_FormField, I_ValidationRule } from './interface';
 import { FormItem } from './FormItem';
 import { E_FormItemType } from './FormItem/enum';
 
@@ -44,5 +44,17 @@ export const createFormFieldConfig = (
     errMsg: '',
     touched: false,
     validationRules: [],
+  };
+};
+
+export const createValidationRule = ({
+  ruleName,
+  errMsg,
+  validator,
+}: I_ValidationRule): I_ValidationRule => {
+  return {
+    ruleName,
+    errMsg,
+    validator,
   };
 };
