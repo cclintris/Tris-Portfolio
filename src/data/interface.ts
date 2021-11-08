@@ -13,3 +13,10 @@ export interface Hobby {
   title: string;
   image: any;
 }
+
+export interface ContactItem {
+  icon: JSX.Element;
+  title: string;
+  contact1: string;
+  contact2?: string;
+}

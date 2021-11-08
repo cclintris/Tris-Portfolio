@@ -24,11 +24,19 @@ export const StyledFormItem = styled.div`
   input {
     width: 100%;
     border: 1px solid var(--border-color);
+    border-radius: 15px;
     outline: none;
-    background: transparent;
+    /* background: transparent; */
+    background-color: var(--background-dark-color);
     height: 50px;
     padding: 0 15px;
     color: inherit;
+  }
+
+  input:-internal-autofill-previewed,
+  input:-internal-autofill-selected {
+    -webkit-text-fill-color: var(--font-light-color) !important;
+    transition: background-color 5000s ease-in-out 0s !important;
   }
 
   span {
@@ -36,7 +44,9 @@ export const StyledFormItem = styled.div`
   }
 
   textarea {
-    background: transparent;
+    /* background: transparent; */
+    background-color: var(--background-dark-color);
+    border-radius: 15px;
     border: 1px solid var(--border-color);
     outline: none;
     color: inherit;

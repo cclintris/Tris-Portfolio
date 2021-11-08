@@ -1,4 +1,5 @@
-import { Info, Service, Hobby } from './interface';
+import React from 'react';
+import { Info, Service, Hobby, ContactItem } from './interface';
 import frontend from '../assets/img/frontend.svg';
 import teach from '../assets/img/teach.svg';
 import basketball from '../assets/img/basketball.svg';
@@ -6,6 +7,9 @@ import billard from '../assets/img/billard.svg';
 import chess from '../assets/img/chess.svg';
 import sing from '../assets/img/sing.svg';
 import violin from '../assets/img/violin.svg';
+import PhoneIcon from '@material-ui/icons/Phone';
+import EmailIcon from '@material-ui/icons/Email';
+import LocationOnIcon from '@material-ui/icons/LocationOn';
 
 export const paragraph: string =
   'a software engineer focused and passionate in frontend web development. Loves coding, basketball, music and also a cat person!';
@@ -72,5 +76,25 @@ export const hobbies: Hobby[] = [
   {
     title: 'Violin',
     image: violin,
+  },
+];
+
+export const contactItems: ContactItem[] = [
+  {
+    icon: React.createElement(PhoneIcon, null, null),
+    title: 'Phone',
+    contact1: '(+886) 18851005762',
+    contact2: '(+86) 0932347511',
+  },
+  {
+    icon: React.createElement(EmailIcon, null, null),
+    title: 'Email',
+    contact1: '181250083@smail.nju.edu.cn',
+    contact2: 'tristantree626@gmail.com',
+  },
+  {
+    icon: React.createElement(LocationOnIcon, null, null),
+    title: 'Current location',
+    contact1: 'Nanjing University, Guluo campus, China',
   },
 ];

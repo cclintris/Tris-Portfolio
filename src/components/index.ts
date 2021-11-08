@@ -8,6 +8,8 @@ import Particle from './Particle';
 import ServiceSection from './ServiceSection';
 import Sidebar from './Sidebar';
 import Title from './Title';
+import Form from './Form';
+import ContactItem from './ContactItem';
 
 export {
   Button,
@@ -20,4 +22,6 @@ export {
   ServiceSection,
   Sidebar,
   Title,
+  Form,
+  ContactItem,
 };
