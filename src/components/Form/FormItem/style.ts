@@ -5,6 +5,12 @@ export const StyledFormItem = styled.div`
   margin-top: 2rem;
   position: relative;
 
+  input,
+  textarea,
+  span {
+    font-size: 1rem;
+  }
+
   label {
     position: absolute;
     left: 20px;

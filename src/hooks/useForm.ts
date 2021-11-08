@@ -29,15 +29,12 @@ export const useForm = (formObj: T_ContactForm): T_useFormHook => {
       // check input field validity
       const isInputValid = isInputFieldValid(inputObj);
 
-      // if input field is valid and is previously set to invalid
+      // 1. if input field is valid and is previously set to invalid
       // then update the field to valid
-      if (isInputValid && !inputObj.valid) {
-        inputObj.valid = true;
-      }
-      // if input field is invalid and is previously set to valid
+      // 2. if input field is invalid and is previously set to valid
       // then update the field to invalid
-      else if (!isInputValid && inputObj.valid) {
-        inputObj.valid = false;
+      if (inputObj.valid !== isInputValid) {
+        inputObj.valid = isInputValid;
       }
 
       // mark input field as touched, it's a one-way process
