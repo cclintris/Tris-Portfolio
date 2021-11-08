@@ -54,6 +54,12 @@ const GlobalStyles = createGlobalStyle`
       font-size: 1rem;
     }
   }
+
+  h6 {
+    color: var(--white-color);
+    font-size: 1.2rem;
+    padding-bottom: 0.6rem;
+  }
 `;
 
 export default GlobalStyles;

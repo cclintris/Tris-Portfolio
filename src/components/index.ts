@@ -10,6 +10,8 @@ import Sidebar from './Sidebar';
 import Title from './Title';
 import Form from './Form';
 import ContactItem from './ContactItem';
+import Skill from './Skill';
+import ProgressBar from './ProgressBar';
 
 export {
   Button,
@@ -24,4 +26,6 @@ export {
   Title,
   Form,
   ContactItem,
+  Skill,
+  ProgressBar,
 };

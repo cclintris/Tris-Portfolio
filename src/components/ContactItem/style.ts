@@ -13,12 +13,8 @@ export const StyledContactItem = styled.div`
   }
   transition: all 0.2s ease-in-out;
   &:hover {
-    border-bottom: 5px solid var(--primary-color);
-    border-right: 5px solid var(--primary-color);
-    transform: translateX(-3px) translateY(-3px);
-    /* svg {
-      color: var(--primary-color);
-    } */
+    text-shadow: 1px 1px 1px #000, -1px -1px 1px #fff;
+    box-shadow: 3px 3px 3px #bbb;
   }
 
   .left-content {
@@ -35,12 +31,6 @@ export const StyledContactItem = styled.div`
   }
 
   .right-content {
-    h6 {
-      color: var(--white-color);
-      font-size: 1.2rem;
-      padding-bottom: 0.6rem;
-    }
-
     p {
       padding: 0.1rem 0;
     }

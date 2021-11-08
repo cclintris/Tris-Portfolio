@@ -1,7 +1,12 @@
 import React from 'react';
+import { Skill } from '../components';
 
 const Resume: React.FC = (): JSX.Element => {
-  return <div>Resume</div>;
+  return (
+    <div>
+      <Skill />
+    </div>
+  );
 };
 
 export default Resume;
