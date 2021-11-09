@@ -20,3 +20,10 @@ export interface ContactItem {
   contact1: string;
   contact2?: string;
 }
+
+export interface Skill {
+  icon: any;
+  title: string;
+  width: string;
+  text: string;
+}

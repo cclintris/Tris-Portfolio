@@ -1,5 +1,5 @@
 import React from 'react';
-import { Info, Service, Hobby, ContactItem } from './interface';
+import { Info, Service, Hobby, ContactItem, Skill } from './interface';
 import frontend from '../assets/img/frontend.svg';
 import teach from '../assets/img/teach.svg';
 import basketball from '../assets/img/basketball.svg';
@@ -10,6 +10,18 @@ import violin from '../assets/img/violin.svg';
 import PhoneIcon from '@material-ui/icons/Phone';
 import EmailIcon from '@material-ui/icons/Email';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
+import HTML from '../assets/img/html.svg';
+import JS from '../assets/img/js.svg';
+import CSS from '../assets/img/css.svg';
+import react from '../assets/img/react.svg';
+import vue from '../assets/img/vue.svg';
+import cpp from '../assets/img/cpp.svg';
+import java from '../assets/img/java.svg';
+import python from '../assets/img/python.svg';
+import ts from '../assets/img/ts.svg';
+import node from '../assets/img/node.svg';
+import jest from '../assets/img/jest.svg';
+import webpack from '../assets/img/webpack.svg';
 
 export const paragraph: string =
   'a software engineer focused and passionate in frontend web development. Loves coding, basketball, music and also a cat person!';
@@ -96,5 +108,80 @@ export const contactItems: ContactItem[] = [
     icon: React.createElement(LocationOnIcon, null, null),
     title: 'Current location',
     contact1: 'Nanjing University, Guluo campus, China',
+  },
+];
+
+export const skills: Skill[] = [
+  {
+    icon: java,
+    title: 'Java',
+    width: '80%',
+    text: '80%',
+  },
+  {
+    icon: cpp,
+    title: 'C++',
+    width: '75%',
+    text: '75%',
+  },
+  {
+    icon: python,
+    title: 'Python',
+    width: '83%',
+    text: '83%',
+  },
+  {
+    icon: HTML,
+    title: 'HTML5',
+    width: '85%',
+    text: '85%',
+  },
+  {
+    icon: JS,
+    title: 'JavaScript',
+    width: '90%',
+    text: '90%',
+  },
+  {
+    icon: ts,
+    title: 'TypeScript',
+    width: '85%',
+    text: '85%',
+  },
+  {
+    icon: CSS,
+    title: 'CSS3',
+    width: '70%',
+    text: '80%',
+  },
+  {
+    icon: react,
+    title: 'React.js',
+    width: '87%',
+    text: '87%',
+  },
+  {
+    icon: vue,
+    title: 'Vue.js',
+    width: '80%',
+    text: '80%',
+  },
+  {
+    icon: node,
+    title: 'Node.js',
+    width: '87%',
+    text: '87%',
+  },
+  {
+    icon: jest,
+    title: 'Jest',
+    width: '85%',
+    text: '85%',
+  },
+  {
+    icon: webpack,
+    title: 'Webpack',
+    width: '73%',
+    text: '73%',
   },
 ];
