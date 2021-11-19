@@ -1,5 +1,5 @@
 import React from 'react';
-import { Info, Service, Hobby, ContactItem, Skill } from './interface';
+import { Info, Service, Hobby, ContactItem, SkillAccordion } from './interface';
 import frontend from '../assets/img/frontend.svg';
 import teach from '../assets/img/teach.svg';
 import basketball from '../assets/img/basketball.svg';
@@ -111,77 +111,102 @@ export const contactItems: ContactItem[] = [
   },
 ];
 
-export const skills: Skill[] = [
+export const skillsSet: SkillAccordion[] = [
   {
-    icon: java,
-    title: 'Java',
-    width: '80%',
-    text: '80%',
+    subject: 'Frontend',
+    skills: [
+      {
+        icon: HTML,
+        title: 'HTML5',
+        width: '85%',
+        text: '85%',
+      },
+      {
+        icon: JS,
+        title: 'JavaScript',
+        width: '90%',
+        text: '90%',
+      },
+      {
+        icon: ts,
+        title: 'TypeScript',
+        width: '85%',
+        text: '85%',
+      },
+      {
+        icon: CSS,
+        title: 'CSS3',
+        width: '70%',
+        text: '80%',
+      },
+      {
+        icon: react,
+        title: 'React.js',
+        width: '87%',
+        text: '87%',
+      },
+      {
+        icon: vue,
+        title: 'Vue.js',
+        width: '80%',
+        text: '80%',
+      },
+    ],
   },
   {
-    icon: cpp,
-    title: 'C++',
-    width: '75%',
-    text: '75%',
+    subject: 'General Programming',
+    skills: [
+      {
+        icon: java,
+        title: 'Java',
+        width: '80%',
+        text: '80%',
+      },
+      {
+        icon: cpp,
+        title: 'C++',
+        width: '75%',
+        text: '75%',
+      },
+      {
+        icon: python,
+        title: 'Python',
+        width: '83%',
+        text: '83%',
+      },
+    ],
   },
   {
-    icon: python,
-    title: 'Python',
-    width: '83%',
-    text: '83%',
+    subject: 'Test Libraries',
+    skills: [
+      {
+        icon: jest,
+        title: 'Jest',
+        width: '85%',
+        text: '85%',
+      },
+    ],
   },
   {
-    icon: HTML,
-    title: 'HTML5',
-    width: '85%',
-    text: '85%',
+    subject: 'Server Side',
+    skills: [
+      {
+        icon: node,
+        title: 'Node.js',
+        width: '87%',
+        text: '87%',
+      },
+    ],
   },
   {
-    icon: JS,
-    title: 'JavaScript',
-    width: '90%',
-    text: '90%',
-  },
-  {
-    icon: ts,
-    title: 'TypeScript',
-    width: '85%',
-    text: '85%',
-  },
-  {
-    icon: CSS,
-    title: 'CSS3',
-    width: '70%',
-    text: '80%',
-  },
-  {
-    icon: react,
-    title: 'React.js',
-    width: '87%',
-    text: '87%',
-  },
-  {
-    icon: vue,
-    title: 'Vue.js',
-    width: '80%',
-    text: '80%',
-  },
-  {
-    icon: node,
-    title: 'Node.js',
-    width: '87%',
-    text: '87%',
-  },
-  {
-    icon: jest,
-    title: 'Jest',
-    width: '85%',
-    text: '85%',
-  },
-  {
-    icon: webpack,
-    title: 'Webpack',
-    width: '73%',
-    text: '73%',
+    subject: 'Others',
+    skills: [
+      {
+        icon: webpack,
+        title: 'Webpack',
+        width: '73%',
+        text: '73%',
+      },
+    ],
   },
 ];

@@ -27,3 +27,8 @@ export interface Skill {
   width: string;
   text: string;
 }
+
+export interface SkillAccordion {
+  subject: string;
+  skills: Skill[];
+}
