@@ -11,35 +11,35 @@ import {
   Typography,
 } from '@material-ui/core';
 import ExpandMore from '@material-ui/icons/ExpandMore';
-import { styled } from '@material-ui/styles';
 
 const Skill: React.FC = (): JSX.Element => {
   return (
     <StyledSkill>
       <MainLayout>
         <Title title="Tech stacks" span="Tech stacks" />
-        <InnerLayout>
+        <InnerLayout style={{ marginTop: '2rem' }}>
           {skillsSet.map(({ subject, skills }, key) => (
             <Accordion key={key} className="accordion">
               <AccordionSummary
-                expandIcon={<ExpandMore />}
+                expandIcon={<ExpandMore style={{ color: '#fff' }} />}
                 aria-controls="panel1a-content"
                 id="panel1a-header"
+                className="accordion-summary"
               >
-                <Typography>{subject}</Typography>
+                <Typography className="typo">{subject}</Typography>
               </AccordionSummary>
-              <AccordionDetails>
-                <div className="skills">
-                  {skills.map(({ icon, title, width, text }, key) => (
-                    <ProgressBar
-                      key={key}
-                      icon={icon}
-                      title={title}
-                      width={width}
-                      text={text}
-                    />
-                  ))}
-                </div>
+              <AccordionDetails className="skills">
+                {/* <div> */}
+                {skills.map(({ icon, title, width, text }, key) => (
+                  <ProgressBar
+                    key={key}
+                    icon={icon}
+                    title={title}
+                    width={width}
+                    text={text}
+                  />
+                ))}
+                {/* </div> */}
               </AccordionDetails>
             </Accordion>
           ))}
