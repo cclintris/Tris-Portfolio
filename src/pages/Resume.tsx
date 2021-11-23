@@ -1,11 +1,13 @@
 import React from 'react';
-import { Skill } from '../components';
+import { MainLayout } from '../styles/LayoutStyles';
+import { Skill, ResumeC } from '../components';
 
 const Resume: React.FC = (): JSX.Element => {
   return (
-    <div>
+    <MainLayout>
       <Skill />
-    </div>
+      <ResumeC />
+    </MainLayout>
   );
 };
 
