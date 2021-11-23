@@ -13,6 +13,7 @@ import ContactItem from './ContactItem';
 import Skill from './Skill';
 import ProgressBar from './ProgressBar';
 import ResumeC from './Resume';
+import SmallTitle from './SmallTitle';
 
 export {
   Button,
@@ -30,4 +31,5 @@ export {
   Skill,
   ProgressBar,
   ResumeC,
+  SmallTitle,
 };
