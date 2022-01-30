@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const StyledSmallTitle = styled.div`
   display: flex;
   align-items: center;
+  margin-bottom: 1rem;
 
   p {
     padding-right: 1rem;

@@ -15,15 +15,19 @@ const ResumeC: React.FC = () => {
     <StyledResume>
       <Title title="Resume" span="Resume" />
       <InnerLayout>
-        <div className="small-title">
-          <SmallTitle icon={school} title="Education" />
-        </div>
-        <div className="education-content">
+        <SmallTitle icon={school} title="Education" />
+        <div className="resume-content">
+          <ResumeItem
+            year="2015 - 2018"
+            title="High School"
+            subtitle="Taipei Municipal Jianguo High School"
+            text="Graduated from No.1 ranked high school in Taiwan."
+          />
           <ResumeItem
             year="2018 - 2022"
-            title="Bachelor of Software Engineering"
+            title="Undergraduate"
             subtitle="Nanjing University"
-            text="Attended university at NJU, pursued bachelor degree of software engineering."
+            text="Attended university at NJU Software Institute, pursued Bachelor degree of Engineering, majoring in Software Engineering."
           />
         </div>
         <SmallTitle icon={briefCase} title="Working Experience" />
