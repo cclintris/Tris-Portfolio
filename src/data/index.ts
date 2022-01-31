@@ -1,5 +1,12 @@
 import React from 'react';
-import { Info, Service, Hobby, ContactItem, SkillAccordion } from './interface';
+import {
+  Info,
+  Service,
+  Hobby,
+  ContactItem,
+  SkillAccordion,
+  Education,
+} from './interface';
 import frontend from '../assets/img/frontend.svg';
 import teach from '../assets/img/teach.svg';
 import basketball from '../assets/img/basketball.svg';
@@ -208,5 +215,22 @@ export const skillsSet: SkillAccordion[] = [
         text: '73%',
       },
     ],
+  },
+];
+
+export const education: Education[] = [
+  {
+    from: 2015,
+    to: 2018,
+    title: 'High School',
+    subtitle: 'Taipei Municipal Jianguo High School',
+    text: 'Graduated from No.1 ranked high school in Taiwan.',
+  },
+  {
+    from: 2018,
+    to: 2022,
+    title: 'Undergraduate',
+    subtitle: 'Nanjing University',
+    text: 'Attended university at NJU Software Institute, pursued Bachelor degree of Engineering, majoring in Software Engineering.',
   },
 ];

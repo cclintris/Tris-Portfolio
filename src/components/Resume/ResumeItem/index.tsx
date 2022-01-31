@@ -3,7 +3,8 @@ import { StyledResumeItem } from './style';
 import { I_ResumeItemProps } from './interface';
 
 const ResumeItem: React.FC<I_ResumeItemProps> = ({
-  year,
+  from,
+  to,
   title,
   subtitle,
   text,
@@ -11,7 +12,7 @@ const ResumeItem: React.FC<I_ResumeItemProps> = ({
   return (
     <StyledResumeItem>
       <div className="up-content">
-        <p>{year}</p>
+        <p>{from + ' ~ ' + to}</p>
       </div>
       <div className="down-content">
         <h5>{title}</h5>

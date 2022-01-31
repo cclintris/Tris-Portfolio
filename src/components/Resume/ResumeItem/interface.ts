@@ -1,5 +1,6 @@
 export interface I_ResumeItemProps {
-  year: string;
+  from: number;
+  to: number;
   title: string;
   subtitle: string;
   text: string;

@@ -6,6 +6,7 @@ import { SmallTitle } from '..';
 import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
 import SchoolIcon from '@material-ui/icons/School';
 import ResumeItem from './ResumeItem';
+import { education } from '../../data';
 
 const ResumeC: React.FC = () => {
   const briefCase = <BusinessCenterIcon />;
@@ -17,18 +18,15 @@ const ResumeC: React.FC = () => {
       <InnerLayout>
         <SmallTitle icon={school} title="Education" />
         <div className="resume-content">
-          <ResumeItem
-            year="2015 - 2018"
-            title="High School"
-            subtitle="Taipei Municipal Jianguo High School"
-            text="Graduated from No.1 ranked high school in Taiwan."
-          />
-          <ResumeItem
-            year="2018 - 2022"
-            title="Undergraduate"
-            subtitle="Nanjing University"
-            text="Attended university at NJU Software Institute, pursued Bachelor degree of Engineering, majoring in Software Engineering."
-          />
+          {education.map(({ from, to, title, subtitle, text }) => (
+            <ResumeItem
+              from={from}
+              to={to}
+              title={title}
+              subtitle={subtitle}
+              text={text}
+            />
+          ))}
         </div>
         <SmallTitle icon={briefCase} title="Working Experience" />
         <div className="resume-content"></div>

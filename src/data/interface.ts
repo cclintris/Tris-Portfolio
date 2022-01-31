@@ -32,3 +32,11 @@ export interface SkillAccordion {
   subject: string;
   skills: Skill[];
 }
+
+export interface Education {
+  from: number;
+  to: number;
+  title: string;
+  subtitle: string;
+  text: string;
+}
