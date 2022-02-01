@@ -6,6 +6,7 @@ import {
   ContactItem,
   SkillAccordion,
   Education,
+  Work,
 } from './interface';
 import frontend from '../assets/img/frontend.svg';
 import teach from '../assets/img/teach.svg';
@@ -232,5 +233,30 @@ export const education: Education[] = [
     title: 'Undergraduate',
     subtitle: 'Nanjing University',
     text: 'Attended university at NJU Software Institute, pursued Bachelor degree of Engineering, majoring in Software Engineering.',
+  },
+];
+
+export const work: Work[] = [
+  {
+    from: 2021,
+    to: 2021,
+    month: {
+      start: 6,
+      end: 8,
+    },
+    title: 'Microsoft Taiwan',
+    subtitle: 'R&D full stack engineer (Internship)',
+    text: 'Worked in Microsoft AIoT department as a R&D full stack intern.',
+  },
+  {
+    from: 2022,
+    to: 2022,
+    month: {
+      start: 7,
+      end: 9,
+    },
+    title: 'Tencent 騰訊',
+    subtitle: 'Front-end engineer (Internship)',
+    text: 'Worked in Tencent, under Tencent Cloud / CSIG / International Business Group as a front-end engineer intern.',
   },
 ];

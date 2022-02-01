@@ -6,7 +6,7 @@ import { SmallTitle } from '..';
 import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
 import SchoolIcon from '@material-ui/icons/School';
 import ResumeItem from './ResumeItem';
-import { education } from '../../data';
+import { education, work } from '../../data';
 
 const ResumeC: React.FC = () => {
   const briefCase = <BusinessCenterIcon />;
@@ -29,7 +29,18 @@ const ResumeC: React.FC = () => {
           ))}
         </div>
         <SmallTitle icon={briefCase} title="Working Experience" />
-        <div className="resume-content"></div>
+        <div className="resume-content">
+          {work.map(({ from, to, month, title, subtitle, text }) => (
+            <ResumeItem
+              from={from}
+              to={to}
+              month={month}
+              title={title}
+              subtitle={subtitle}
+              text={text}
+            />
+          ))}
+        </div>
       </InnerLayout>
     </StyledResume>
   );

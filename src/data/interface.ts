@@ -1,3 +1,5 @@
+import { I_Month } from '../components/Resume/ResumeItem/interface';
+
 export interface Info {
   attr: string;
   value: string;
@@ -39,4 +41,8 @@ export interface Education {
   title: string;
   subtitle: string;
   text: string;
+}
+
+export interface Work extends Education {
+  month: I_Month;
 }

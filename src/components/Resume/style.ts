@@ -7,5 +7,8 @@ export const StyledResume = styled.section`
 
   .resume-content {
     border-left: 2px solid orange;
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
   }
 `;
