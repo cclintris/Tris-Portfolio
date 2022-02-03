@@ -7,6 +7,7 @@ import {
   SkillAccordion,
   Education,
   Work,
+  MenuItem,
 } from './interface';
 import frontend from '../assets/img/frontend.svg';
 import teach from '../assets/img/teach.svg';
@@ -260,3 +261,5 @@ export const work: Work[] = [
     text: 'Worked in Tencent, under Tencent Cloud / CSIG / International Business Group as a front-end engineer intern.',
   },
 ];
+
+export const menuItems: MenuItem[] = [];

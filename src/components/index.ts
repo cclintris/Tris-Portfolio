@@ -14,6 +14,7 @@ import Skill from './Skill';
 import ProgressBar from './ProgressBar';
 import ResumeC from './Resume';
 import SmallTitle from './SmallTitle';
+import Menu from './Menu';
 
 export {
   Button,
@@ -32,4 +33,5 @@ export {
   ProgressBar,
   ResumeC,
   SmallTitle,
+  Menu,
 };

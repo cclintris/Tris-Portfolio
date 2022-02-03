@@ -46,3 +46,12 @@ export interface Education {
 export interface Work extends Education {
   month: I_Month;
 }
+
+export interface MenuItem {
+  id: string;
+  image: string;
+  link1: string;
+  link2: string;
+  title: string;
+  text: string;
+}
