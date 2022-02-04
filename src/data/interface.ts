@@ -49,9 +49,9 @@ export interface Work extends Education {
 
 export interface MenuItem {
   id: string;
-  image: string;
+  image: any;
   link1: string;
-  link2: string;
+  link2?: string;
   title: string;
   text: string;
 }

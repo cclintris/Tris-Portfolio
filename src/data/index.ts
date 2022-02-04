@@ -31,6 +31,9 @@ import ts from '../assets/img/ts.svg';
 import node from '../assets/img/node.svg';
 import jest from '../assets/img/jest.svg';
 import webpack from '../assets/img/webpack.svg';
+import coin from '../assets/img/coin.png';
+import doodleSnake from '../assets/img/doodle-snake.png';
+import reactTetris from '../assets/img/react-tetris.jpeg';
 
 export const paragraph: string =
   'a software engineer focused and passionate in frontend web development. Loves coding, basketball, music and also a cat person!';
@@ -262,4 +265,26 @@ export const work: Work[] = [
   },
 ];
 
-export const menuItems: MenuItem[] = [];
+export const menuItems: MenuItem[] = [
+  {
+    id: '1',
+    image: doodleSnake,
+    link1: 'https://github.com/cclintris/doodle-snake',
+    title: 'Simple doodle snake game',
+    text: 'HTML / CSS / JavaScript',
+  },
+  {
+    id: '2',
+    image: coin,
+    link1: 'https://github.com/cclintris/coinKG',
+    title: 'CO$IN system build for NJU DevOps lab research work.',
+    text: 'Frontend: Vue.js + D3 + Element.js\n Backend: SpringBoot + Flask',
+  },
+  {
+    id: '3',
+    image: reactTetris,
+    link1: 'https://github.com/cclintris/ReacTetris',
+    title: 'Tetris game build by react',
+    text: 'React.js / Styled-components',
+  },
+];
