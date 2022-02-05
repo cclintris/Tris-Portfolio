@@ -3,7 +3,7 @@ import Home from '../pages/Home';
 import About from '../pages/About';
 import Blogs from '../pages/Blogs';
 import Contact from '../pages/Contact';
-import Portfolios from '../pages/Portfolios';
+import Projects from '../pages/Projects';
 import Resume from '../pages/Resume';
 import NotFound from '../pages/NotFound';
 import { ReactElement } from 'hoist-non-react-statics/node_modules/@types/react';
@@ -19,8 +19,8 @@ export const get_Route_JSX_According_to_Path = (path: string): ReactElement => {
       return React.createElement(Blogs, null, null);
     case '/contact':
       return React.createElement(Contact, null, null);
-    case '/portfolios':
-      return React.createElement(Portfolios, null, null);
+    case '/projects':
+      return React.createElement(Projects, null, null);
     case '/resume':
       return React.createElement(Resume, null, null);
     default:
